@@ -2,7 +2,7 @@
   <div id="app">
     <img src="./assets/logo.png" @click="desf">
     <div @click="change">改值</div>
-    <div style="width:500px;border: 1px solid red;height:300px;margin: auto;">
+    <div style="width:500px;border: 1px solid red;height:300px;margin: auto;margin">
       <my-table v-if="des" :data="data" :rowHeight="30" height="400"></my-table>
     </div>
 
@@ -98,5 +98,8 @@ function ObjectClone(obj) {
 *{
   margin:0;
   padding:0;
+}
+.mytable{
+  margin-bottom: 100px;
 }
 </style>
